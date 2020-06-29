@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,14 @@
 		4601AA0424A96F06002605B3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4601AA0224A96F06002605B3 /* Main.storyboard */; };
 		4601AA0624A96F08002605B3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4601AA0524A96F08002605B3 /* Assets.xcassets */; };
 		4601AA0924A96F08002605B3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4601AA0724A96F08002605B3 /* LaunchScreen.storyboard */; };
+		4601AA1124A97479002605B3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4601AA1024A97479002605B3 /* GoogleService-Info.plist */; };
+		4601AA1324A976B7002605B3 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4601AA1224A976B7002605B3 /* LoginViewController.swift */; };
+		4601AA1524A97ACF002605B3 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4601AA1424A97ACF002605B3 /* Post.swift */; };
+		4601AA1824A97E6A002605B3 /* ContentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4601AA1624A97E69002605B3 /* ContentTableViewCell.swift */; };
+		4601AA1924A97E6A002605B3 /* ContentTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4601AA1724A97E69002605B3 /* ContentTableViewCell.xib */; };
+		4601AA1C24A98344002605B3 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 4601AA1B24A98344002605B3 /* Kingfisher */; };
+		4601AA1E24A9838F002605B3 /* PostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4601AA1D24A9838F002605B3 /* PostViewController.swift */; };
+		5978FE5921FE4DC9460942A1 /* Pods_SimpleImageSNS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BF39950BD4E4FCF38AAED3C /* Pods_SimpleImageSNS.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +32,15 @@
 		4601AA0524A96F08002605B3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4601AA0824A96F08002605B3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4601AA0A24A96F08002605B3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4601AA1024A97479002605B3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		4601AA1224A976B7002605B3 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		4601AA1424A97ACF002605B3 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		4601AA1624A97E69002605B3 /* ContentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentTableViewCell.swift; sourceTree = "<group>"; };
+		4601AA1724A97E69002605B3 /* ContentTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ContentTableViewCell.xib; sourceTree = "<group>"; };
+		4601AA1D24A9838F002605B3 /* PostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewController.swift; sourceTree = "<group>"; };
+		7BF39950BD4E4FCF38AAED3C /* Pods_SimpleImageSNS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SimpleImageSNS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8DDF16644CA462BFD6E6C1AD /* Pods-SimpleImageSNS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleImageSNS.release.xcconfig"; path = "Target Support Files/Pods-SimpleImageSNS/Pods-SimpleImageSNS.release.xcconfig"; sourceTree = "<group>"; };
+		E0D6B215FB2C199E6F900412 /* Pods-SimpleImageSNS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleImageSNS.debug.xcconfig"; path = "Target Support Files/Pods-SimpleImageSNS/Pods-SimpleImageSNS.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +48,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4601AA1C24A98344002605B3 /* Kingfisher in Frameworks */,
+				5978FE5921FE4DC9460942A1 /* Pods_SimpleImageSNS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		11C9C2B1AF28393739B9E3C4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7BF39950BD4E4FCF38AAED3C /* Pods_SimpleImageSNS.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		4601A9F024A96F06002605B3 = {
 			isa = PBXGroup;
 			children = (
 				4601A9FB24A96F06002605B3 /* SimpleImageSNS */,
 				4601A9FA24A96F06002605B3 /* Products */,
+				8DA6D6105E0C097CCEE8765D /* Pods */,
+				11C9C2B1AF28393739B9E3C4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +85,30 @@
 		4601A9FB24A96F06002605B3 /* SimpleImageSNS */ = {
 			isa = PBXGroup;
 			children = (
+				4601AA0024A96F06002605B3 /* ViewController.swift */,
+				4601AA1224A976B7002605B3 /* LoginViewController.swift */,
+				4601AA1D24A9838F002605B3 /* PostViewController.swift */,
+				4601AA1424A97ACF002605B3 /* Post.swift */,
+				4601AA1624A97E69002605B3 /* ContentTableViewCell.swift */,
+				4601AA1724A97E69002605B3 /* ContentTableViewCell.xib */,
+				4601AA0224A96F06002605B3 /* Main.storyboard */,
 				4601A9FC24A96F06002605B3 /* AppDelegate.swift */,
 				4601A9FE24A96F06002605B3 /* SceneDelegate.swift */,
-				4601AA0024A96F06002605B3 /* ViewController.swift */,
-				4601AA0224A96F06002605B3 /* Main.storyboard */,
 				4601AA0524A96F08002605B3 /* Assets.xcassets */,
 				4601AA0724A96F08002605B3 /* LaunchScreen.storyboard */,
 				4601AA0A24A96F08002605B3 /* Info.plist */,
+				4601AA1024A97479002605B3 /* GoogleService-Info.plist */,
 			);
 			path = SimpleImageSNS;
+			sourceTree = "<group>";
+		};
+		8DA6D6105E0C097CCEE8765D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E0D6B215FB2C199E6F900412 /* Pods-SimpleImageSNS.debug.xcconfig */,
+				8DDF16644CA462BFD6E6C1AD /* Pods-SimpleImageSNS.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,15 +118,20 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4601AA0D24A96F08002605B3 /* Build configuration list for PBXNativeTarget "SimpleImageSNS" */;
 			buildPhases = (
+				CE43FC363D4522E554F0CAF3 /* [CP] Check Pods Manifest.lock */,
 				4601A9F524A96F06002605B3 /* Sources */,
 				4601A9F624A96F06002605B3 /* Frameworks */,
 				4601A9F724A96F06002605B3 /* Resources */,
+				84108937E4C2F9C0F034E02E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = SimpleImageSNS;
+			packageProductDependencies = (
+				4601AA1B24A98344002605B3 /* Kingfisher */,
+			);
 			productName = SimpleImageSNS;
 			productReference = 4601A9F924A96F06002605B3 /* SimpleImageSNS.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +160,9 @@
 				Base,
 			);
 			mainGroup = 4601A9F024A96F06002605B3;
+			packageReferences = (
+				4601AA1A24A98344002605B3 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			productRefGroup = 4601A9FA24A96F06002605B3 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -126,21 +178,69 @@
 			buildActionMask = 2147483647;
 			files = (
 				4601AA0924A96F08002605B3 /* LaunchScreen.storyboard in Resources */,
+				4601AA1124A97479002605B3 /* GoogleService-Info.plist in Resources */,
 				4601AA0624A96F08002605B3 /* Assets.xcassets in Resources */,
 				4601AA0424A96F06002605B3 /* Main.storyboard in Resources */,
+				4601AA1924A97E6A002605B3 /* ContentTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		84108937E4C2F9C0F034E02E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SimpleImageSNS/Pods-SimpleImageSNS-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SimpleImageSNS/Pods-SimpleImageSNS-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SimpleImageSNS/Pods-SimpleImageSNS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CE43FC363D4522E554F0CAF3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SimpleImageSNS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		4601A9F524A96F06002605B3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4601AA1324A976B7002605B3 /* LoginViewController.swift in Sources */,
 				4601AA0124A96F06002605B3 /* ViewController.swift in Sources */,
+				4601AA1E24A9838F002605B3 /* PostViewController.swift in Sources */,
 				4601A9FD24A96F06002605B3 /* AppDelegate.swift in Sources */,
 				4601A9FF24A96F06002605B3 /* SceneDelegate.swift in Sources */,
+				4601AA1524A97ACF002605B3 /* Post.swift in Sources */,
+				4601AA1824A97E6A002605B3 /* ContentTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,6 +382,7 @@
 		};
 		4601AA0E24A96F08002605B3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E0D6B215FB2C199E6F900412 /* Pods-SimpleImageSNS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -300,6 +401,7 @@
 		};
 		4601AA0F24A96F08002605B3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8DDF16644CA462BFD6E6C1AD /* Pods-SimpleImageSNS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -338,6 +440,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		4601AA1A24A98344002605B3 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.14.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		4601AA1B24A98344002605B3 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4601AA1A24A98344002605B3 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 4601A9F124A96F06002605B3 /* Project object */;
 }
